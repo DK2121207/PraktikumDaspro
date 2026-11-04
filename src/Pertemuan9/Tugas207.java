@@ -11,6 +11,7 @@ public class Tugas207 {
         int jenis, durasi, total = 0;
         
         do {
+            System.out.println("Masukkan 0 untuk menyelesaikan program");
             System.out.print("Masukkan jenis kendaraan (1/2): ");
             jenis = sc.nextInt();
             
@@ -26,6 +27,6 @@ public class Tugas207 {
                 }
             }
         } while (jenis != 0);
-        System.out.println("Total biaya parkir" + total);
+        System.out.println("Total biaya parkir: " + total);
     }
 }
