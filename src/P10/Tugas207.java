@@ -1,3 +1,5 @@
+// P = 7
+// Tugas 2 (uji wajib) ==> 5 + (P mod 4) = 5 + (7 % 4) = 8
 package P10;
 
 import java.util.Scanner;
