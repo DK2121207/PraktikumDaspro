@@ -5,10 +5,10 @@ package P12;
 public class ArrayBilangan07 {
     public static void main(String[] args) {
         int P = 7;
-        int[] bil = {P, P+8, -(1+(P % 7)), 20+(P % 15)};
+        int[] bil = { P, P + 8, -(1 + (P % 7)), 20 + (P % 15) };
 
         for (int i = 0; i < bil.length; i++) {
-            System.out.println("bil[" + i + "] = " + bil[i]);
+            System.out.println("bil[" + i + "] = " + bil[i] + ", double = " + (bil[i] * 2));
         }
 
         for (int nilai : bil) {
