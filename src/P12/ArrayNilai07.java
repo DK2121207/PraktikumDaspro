@@ -14,13 +14,21 @@ public class ArrayNilai07 {
             nilaiAkhir[i] = input.nextInt();
         }
 
-        for (int i = 0; i < nilaiAkhir.length; i++) {
-            // String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
-            // System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
-            //         status + ")");
-            if (nilaiAkhir[i] > 70) {
-                System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+        // for (int i = 0; i < nilaiAkhir.length; i++) {
+        //     // String status = (nilaiAkhir[i] > 70) ? "LULUS" : "TIDAK LULUS";
+        //     // System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (" +
+        //     //         status + ")");
+        //     if (nilaiAkhir[i] > 70) {
+        //         System.out.println("Mahasiswa ke-" + (i + 1) + ": " + nilaiAkhir[i] + " (LULUS)");
+        //     }
+        // }
+        
+        int counter = 1;
+        for (int i : nilaiAkhir) {
+            if (i > 70) {
+                System.out.println("Mahasiswa ke-" + counter + ": " + i + " (LULUS)");
             }
+            counter++;
         }
     }
 }
