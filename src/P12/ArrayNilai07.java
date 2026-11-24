@@ -24,11 +24,18 @@ public class ArrayNilai07 {
         // }
         
         int counter = 1;
+        int lulus = 0, tidakLulus = 0;
         for (int i : nilaiAkhir) {
             if (i > 70) {
                 System.out.println("Mahasiswa ke-" + counter + ": " + i + " (LULUS)");
+                lulus++;
+            }
+            else {
+                tidakLulus++;
             }
             counter++;
         }
+        System.out.println("Jumlah lulus: " + lulus);
+        System.out.println("Jumlah tidak lulus: " + tidakLulus);
     }
 }
